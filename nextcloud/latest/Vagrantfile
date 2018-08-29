@@ -1,0 +1,9 @@
+$ip = "192.168.11.22"
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "ale_polidori/NethServer"
+  config.vm.box_version = "7.5.1804"
+  config.vm.network "private_network", ip: $ip
+  config.vm.synced_folder ".", "/vagrant", disabled: true
+  config.vm.provision "shell", path: "install.sh", args: $ip
+end
