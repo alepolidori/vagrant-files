@@ -57,3 +57,35 @@ Find out more on:
 - [Nextcloud](https://docs.nextcloud.com/)
 - [NethServer](http://docs.nethserver.org/en/v7/)
 - [NethServer Nextcloud](http://docs.nethserver.org/en/v7/nextcloud.html)
+
+
+## Example: having [NethServer FreePBX](https://docs.nethserver.org/en/v7/freepbx.html) installation ready to use
+
+*Based on [Asterisk](https://www.asterisk.org/) and [FreePBX](https://www.freepbx.org/)*
+
+Execute:
+
+```
+git clone https://github.com/alepolidori/vagrant-files.git
+cd vagrant-files/nethserver-freepbx/nethserver-freepbx-14.0.6
+vagrant up
+```
+
+You have 6 PJSIP extensions already configured:
+
+- 200
+- 201
+- 202
+- 203
+- 204
+- 205
+
+All extensions have the same default secret: Nethesis,1234
+
+You can also access to the FreePBX Web Interface to customize the configuration at https://192.168.11.22/freepbx
+
+Find out more on:
+
+- [NethServer FreePBX](https://docs.nethserver.org/en/v7/freepbx.html)
+- [FreePBX](http://docs.nethserver.org/en/v7/freepbx.html)
+- [Asterisk](https://www.asterisk.org/)
